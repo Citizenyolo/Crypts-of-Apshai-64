@@ -28,12 +28,13 @@ Welcome to **Crypts of Apshai 64**, a browser-based procedural dungeon crawler i
     *   Enjoy synthesized C64 SID-style Web Audio sound effects bringing the dungeon to life.
 
 
+
 ## 🚀 Quick Start (Local Development)
 
 Adventurer, if you wish to host your own descent into the Crypts, follow these ancient rituals:
 
 ### Prerequisites
-*   **Node.js & npm:** Ensure you have Node.js (v18+) installed on your machine.
+*   **Node.js & npm:** Ensure you have Node.js installed on your machine.
 
 ### Installation
 
@@ -44,9 +45,8 @@ Adventurer, if you wish to host your own descent into the Crypts, follow these a
     ```
 
 2.  **Gather Provisions (Install Dependencies):**
-    *Note: Due to some ancient artifact conflicts, use the legacy peer dependencies flag.*
     ```bash
-    npm install --legacy-peer-deps
+    npm install
     ```
 
 3.  **Awaken the Dungeon (Start Local Server):**
@@ -55,8 +55,8 @@ Adventurer, if you wish to host your own descent into the Crypts, follow these a
     ```
 
 4.  **Enter the Crypt:**
-    Open your favorite web browser and navigate to the portal at:
-    **`http://localhost:3000`**
+    Open your favorite web browser and navigate to the portal at the URL reported by Vite (usually `http://localhost:5173`, but verify your console output!).
+    *(Note: if configured via `package.json` to use port 3000, it may be `http://localhost:3000`)*
 
 ## ✅ Verification Summary
 
