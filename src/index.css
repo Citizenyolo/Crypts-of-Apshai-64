@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --c64-black: #000000;
+    --c64-white: #FFFFFF;
+    --c64-red: #813338;
+    --c64-cyan: #75CEC8;
+    --c64-purple: #8E3C97;
+    --c64-green: #56AC4D;
+    --c64-blue: #2E2C9B;
+    --c64-yellow: #EDF171;
+    --c64-orange: #8E5029;
+    --c64-brown: #553800;
+    --c64-lred: #C46C71;
+    --c64-dgrey: #4A4A4A;
+    --c64-mgrey: #7B7B7B;
+    --c64-lgreen: #A9FF9F;
+    --c64-lblue: #706DEB;
+    --c64-lgrey: #B2B2B2;
+  }
+
+  body {
+    font-family: 'Silkscreen', 'IBM Plex Mono', monospace;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+  }
+}
+
+.font-c64-display {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: 0.04em;
+}
+
+.font-c64-body {
+  font-family: 'Silkscreen', monospace;
+}
+
+.font-c64-mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.pixelated-canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Authentic C64 CRT Scanline & Shadowmask Overlay (no backdrop-filter) */
+.crt-scanlines {
+  background:
+    linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.42) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.04),
+      rgba(0, 255, 0, 0.015),
+      rgba(0, 0, 255, 0.04)
+    );
+  background-size: 100% 4px, 6px 100%;
+}
+
+.crt-vignette {
+  box-shadow:
+    inset 0 0 48px rgba(0, 0, 0, 0.75),
+    inset 0 0 12px rgba(112, 109, 235, 0.18);
+}
+
+.c64-text-stroke {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px #000000;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.c64-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid #706DEB;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.c64-box-gold {
+  background-color: rgba(0, 0, 0, 0.92);
+  border: 2px solid #EDF171;
+  box-shadow: 4px 4px 0px #000000;
+}
+

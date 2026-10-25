@@ -1,0 +1,6 @@
+{
+  "name": "Crypts of Apshai 64",
+  "description": "A Commodore 64-inspired procedural dungeon crawler with VIC-II pixel art, SID Web Audio synthesis, tactical turn-based combat, and CRT emulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
